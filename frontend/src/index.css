@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  list-style: none;
+}
+:root{
+  --color1: #333333;
+  --color2: #f7941f;
+}
+header{
+  background: var(--color2);
+}
+
+.adminHome{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom right, var(--color1) 50%, var(--color2) 50%);
+}
+.adminHome form{
+  color: var(--color1);
+}
+.adminHome h2 span, .adminHome h2 svg, .adminHome a{
+  color: var(--color2);
+}
+.adminHome button{
+  background: var(--color1);
+  color: var(--color2);
+  transition: 0.5s;
+}
+.adminHome button:hover{
+  background: var(--color2);
+  color: var(--color1);
+}
+header{
+  background: var(--color2);
+}
+.hamburger{
+  width: 25px;
+  height: 25px;
+  transition: 0.3s;
+  border: 3px solid transparent;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.hamburger:hover{
+  border: 3px solid white;
+  border-radius: 10px;
+}
+.userPop{
+  transform-origin: top;
+  transform: rotateX(90deg);
+  opacity: 0;
+  height: 0px;
+  font-size: 0px;
+  transition: 0.5s;
+  right: 15px;
+}
+.user{
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.user:hover{
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.user:hover .userPop{
+  transform: rotateX(0deg);
+  opacity: 1;
+  height: auto;
+  font-size: initial;
+}
+.aside{
+  background: var(--color1);
+  border-radius: 0px 0px 1rem 1rem;
+}
+.subMenu{
+  transform-origin: top;
+}
